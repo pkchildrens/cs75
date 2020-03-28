@@ -58,6 +58,22 @@ google.com - domain name
 - SFTP - SSH file transfer protocol - secure file transfer protocol
 - DHCP - Dynamic host configuration protocol - dynamically provides an ip address to a machine when the machine asks for it, on a virtual machine or on a network with a modem or router
 
+### HTTP GET
+
+- Typically when the url changes after a user request, it is a GET request
+- https://www.google.com/search?q=harvard
+- The /search denotes a particular file on the server
+- The '?' separates the path from the parameters
+- In a url request, q is an http parameter, the query parameter, an input to a web server than generally comes from a form (or javascript code)
+- Parameters are separated by an '&'
+
+### Developer Tools
+
+- Elements tab shows page html in pretty print and in it's hierarchy
+- Network tab sniffs all the traffic between the browser and server and show each http request, one per line
+- There are many http requests because the initial http request loads a page that requests additional resources, such as more javascript, images, etc
+- Within each http request line there we show the headers (), the preview (what was returned), the response (the raw of what was returned)
+
 ### Telnet
 
 Used in terminal to explore websites outside the scope of a browser. Like ssh but not encrypted.
